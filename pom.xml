@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>jul_demo</module>
+        <module>log4j_demo</module>
     </modules>
 
     <properties>

@@ -161,6 +161,18 @@ public class JULTest {
         logger.finer("finer");
         logger.finest("finest");
 
+        Logger logger2 = Logger.getLogger("test");
+
+        //日志记录输出
+        logger2.severe("server test");
+        logger2.warning("warning test");
+        logger2.info("info test");//jul默认的日志级别是 info
+
+        logger2.config("config test");
+        logger2.fine("fine test");
+        logger2.finer("finer test");
+        logger2.finest("finest test");
+
     }
 
 }
