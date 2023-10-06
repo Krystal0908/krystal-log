@@ -32,11 +32,18 @@
         </dependency>-->
 
         <!--logback日志实现-->
-        <!--<dependency>
+        <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.2.3</version>
-        </dependency>-->
+        </dependency>
+
+        <!--配置log4的桥接器-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>1.7.25</version>
+        </dependency>
 
         <!--nop 日志开关-->
         <!--<dependency>
@@ -52,7 +59,7 @@
 <!--            <version>1.7.12</version>-->
 <!--        </dependency>-->
 
-<!--        &lt;!&ndash;log4j&ndash;&gt;-->
+        <!--log4j-->
 <!--        <dependency>-->
 <!--            <groupId>log4j</groupId>-->
 <!--            <artifactId>log4j</artifactId>-->
