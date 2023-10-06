@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    status="warn" 日志框架本身的输出日志级别
+    monitorInterval="5"  自动加载配置文件的间隔时间，不低于 5 秒（热更新机制）
+-->
+<Configuration status="debug" monitorInterval="5">
+
+    <!--日志处理-->
+    <Appenders>
+        <Console name="Console" target="SYSTEM_ERR">
+            <!--日志输出的格式表达式-->
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] [%-5level] %c{36}:%L --- %m%n" />
+        </Console>
+        </Appenders>
+
+    <!--Logger定义-->
+    <Loggers>
+        <Root level="trace">
+            <!--指定日志使用的处理器-->
+            <AppenderRef ref="Console" />
+
+        </Root>
+    </Loggers>
+</Configuration>
